@@ -103,7 +103,7 @@ let webRepl = {
           this.$dtp.binaryState = 0;
           this.$ws.send("\r\r");
 
-          setTimeout(() => this.slotClearTerm(), 300);
+          setTimeout(() => {this.slotClearTerm && this.slotClearTerm()}, 300);
           break;
       }
     } else {

@@ -20,7 +20,8 @@ self.MonacoEnvironment = {
     if (label === "typescript" || label === "javascript") {
       return "./ts.worker.bundle.js";
     }
-    return "./editor.worker.bundle.js";
+    // return "./editor.worker.bundle.js";
+    return "./js/editor.worker.js";
   }
 };
 
