@@ -82,6 +82,14 @@ export default {
       connected: false
     };
   },
+  created: function () {
+      document.addEventListener('keydown', (e) => {
+          if (e.key == 'F5') {
+              e.preventDefault();
+              this.runScript();
+          }
+      });
+  },
   mounted: function() {
     this.$nextTick(function() {});
   },

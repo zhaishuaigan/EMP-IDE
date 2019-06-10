@@ -80,12 +80,12 @@ export default {
       if (this.$cookie.get("url") != null) {
         this.espIP.push(this.$cookie.get("url"));
       }
-      let that = this;
-      axios.get("http://www.1zlab.com/ide/get/ip/").then(function (rsp) {
-        let records = rsp.data.ip.map(_ip => `ws://${_ip}:8266`).slice(0, -1);
-        that.espIP.push(...records);
-        that.url = that.espIP[that.espIP.length - 1];
-      });
+      // let that = this;
+      // axios.get("http://www.1zlab.com/ide/get/ip/").then(function (rsp) {
+      //   let records = rsp.data.ip.map(_ip => `ws://${_ip}:8266`).slice(0, -1);
+      //   that.espIP.push(...records);
+      //   that.url = that.espIP[that.espIP.length - 1];
+      // });
     },
 
     connect() {

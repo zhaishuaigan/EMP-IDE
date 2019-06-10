@@ -63,6 +63,13 @@ export default {
       if (this.$cookie.get("fontSize") != null) {
         this.fontSize = parseInt(this.$cookie.get("fontSize"));
       }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.key == 's') {
+            e.preventDefault();
+            this.saveFile();
+        }
+      });
     }
   },
   computed: {
