@@ -21,7 +21,7 @@
         "Search": "搜索",
         "Modules": "模块",
         "Docs": "文档",
-        "RunScript": "运行脚本",
+        "RunScript": "运行脚本 (F5)",
         "MemoryClean": "内存清理",
         "Connect": "连接到设备",
         "Settings": "设置"
